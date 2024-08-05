@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>O Despertar na Biblioteca</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Início da aventura dentro da biblioteca universitária">
+            <p>
+                Você, um estudante universitário, acorda abruptamente com a sensação de que algo está errado.<br>
+                A última coisa que se lembra é de estar estudando na biblioteca.<br>
+                Agora, está tudo escuro, apenas o luar filtra tenuamente pelas janelas altas, iluminando pilhas de
+                livros e mesas vazias.<br>
+                Então, você rapidamente recolhe seus pertences e pondera sobre o próximo passo a tomar.
+            </p>
+            <button class="btn-proximo" data-proximo="1">Verificar o seu celular</button>
+            <button class="btn-proximo" data-proximo="2">Procurar por outras pessoas</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo1.png" alt="Olhando o celular">
+
+            <p>
+                Você verifica seu celular: são 2 da manhã e a bateria está quase no fim.<br>
+                Você tenta ligar para o seu irmão, mas percebe que todos os contatos foram misteriosamente apagados.<br>
+                Não restam muitas alternativas a não ser usar o aparelho como uma lanterna.
+            </p>
+            <button class="btn-proximo" data-proximo="3">Investigar a biblioteca e procurar por pistas</button>
+            <button class="btn-proximo" data-proximo="4">Tentar sair imediatamente usando a rota habitual</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>Decidindo buscar ajuda, você caminha cautelosamente entre as estantes, chamando baixinho.<br>
+                O silêncio amplifica o som dos seus passos.<br>
+                Você se dirige ao balcão de empréstimos, um local comum para encontrar funcionários a qualquer hora.</p>
+            <button class="btn-proximo" data-proximo="5">Olhar ao redor</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>Explorando a biblioteca, você nota uma ligeira corrente de ar vindo de uma estante ao fundo, que parece
+                levemente deslocada da parede.</p>
+            <button class="btn-proximo" data-proximo="6">Investigar a estante suspeita mais de perto</button>
+            <button class="btn-proximo" data-proximo="7">Continuar a busca por uma saída de emergência</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Você corre para a porta principal, mas descobre que está trancada com uma corrente pesada. Percebendo que
+                não tem escolha, você decide</p>
+            <button class="btn-proximo" data-proximo="3">Retornar a exploração na biblioteca</button>
+            <button class="btn-proximo" data-proximo="9">Voltar para a mesa e dormir novamente</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Você decide tomar um momento para observar melhor o ambiente.<br>
+                Com cuidado, você examina cada sombra e contorno, procurando por sinais de movimento ou qualquer coisa
+                fora do comum que possa ajudar a entender a situação.</p>
+            <button class="btn-proximo" data-proximo="3">Continuar a busca na biblioteca</button>
+            <button class="btn-proximo" data-proximo="8">Desistir</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="img/cenario-passo8.png" alt="Você resolve dormir na mesa da biblioteca">
+
+            <p>Sentindo-se exausto e sem opções, você retorna à sua mesa, encosta a cabeça nos braços cruzados e se
+                permite adormecer, esperando que tudo seja apenas um sonho ruim.<br>
+                Ao acordar, você se vê de volta ao momento em que despertou pela primeira vez na biblioteca, com a
+                sensação de déjà vu intensa.<br>
+                Tudo parece igual, mas você sabe que algo precisa mudar para quebrar este ciclo.</p>
+            <button class="btn-proximo" data-proximo="0">Acorde e retorne tudo</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Deseja realmente dormir?</p>
+            <button class="btn-proximo" data-proximo="8">Sim</button>
+            <button class="btn-proximo" data-proximo="10">Não</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="img/cenario-passo8.png" alt="Você recebe o final ruim por não fazer nada">
+
+            <h2>Final 3: Ruim</h2>
+
+            <p>À medida que os minutos passam, a exaustão toma conta de você.<br>
+                A mente fica turva, a visão embaça, e a realidade começa a desmoronar.<br>
+                Sem o descanso necessário, suas forças se esgotam, e o jogo chega ao fim.</p>
+            <button class="btn-proximo" data-proximo="0">Retorne para o ínicio</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Ao inspecionar a estante, você descobre que ela oculta uma passagem secreta.<br>
+                Empurrando a estante, ela revela uma antiga escadaria de pedra que desce para o desconhecido.</p>
+            <button class="btn-proximo" data-proximo="11">Descer as escadas e explorar a parte antiga da
+                universidade</button>
+            <button class="btn-proximo" data-proximo="7">Sentir-se intimidada pelo desconhecido e voltar para tentar a
+                saída de emergência</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Usando a lanterna do celular, você encontra um mapa de evacuação que mostra uma saída de emergência não
+                muito distante.<br>
+                No entanto, o caminho é complexo e passa por várias portas trancadas.</p>
+            <button class="btn-proximo" data-proximo="12">Continuar andando</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Agora, você deve atravessar um corredor misterioso que parece não ter fim. Escolha as portas certas para
+                encontrar o caminho até o final.</p>
+            <button class="btn-proximo" data-proximo="13">E então...</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <p>No corredor, você escolhe</p>
+            <button class="btn-proximo" data-proximo="13">Porta A</button>
+            <button class="btn-proximo" data-proximo="14">Porta B</button>
+            <button class="btn-proximo" data-proximo="13">Porta C</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <p>No corredor, você escolhe</p>
+            <button class="btn-proximo" data-proximo="15">Porta X</button>
+            <button class="btn-proximo" data-proximo="13">Porta Y</button>
+            <button class="btn-proximo" data-proximo="13">Porta Z</button>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <p>No corredor, você escolhe</p>
+            <button class="btn-proximo" data-proximo="16">Porta H</button>
+            <button class="btn-proximo" data-proximo="13">Porta I</button>
+            <button class="btn-proximo" data-proximo="13">Porta J</button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <p>No corredor, você escolhe</p>
+            <button class="btn-proximo" data-proximo="13">Porta R</button>
+            <button class="btn-proximo" data-proximo="17">Porta S</button>
+            <button class="btn-proximo" data-proximo="13">Porta T</button>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <p>No corredor, você escolhe</p>
+            <button class="btn-proximo" data-proximo="13">Porta L</button>
+            <button class="btn-proximo" data-proximo="13">Porta M</button>
+            <button class="btn-proximo" data-proximo="18">Porta N</button>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <img src="img/cenario-passo18.png" alt="">
+
+            <p>Chegastes ao fim</p>
+            <button class="btn-proximo" data-proximo="19">...</button>
+        </div>
+
+        <div class="passo" id="passo-19">
+            <img src="img/cenario-passo19.png" alt="Você sai pela saída de emergência e encontra a polícia">
+
+            <h2>Final 2: Desconhecido</h2>
+
+            <p>Usando sua astúcia para desbloquear as portas, você finalmente alcança a saída de emergência.<br>
+                Ao abrir a porta, ela é recebida por luzes piscando e policiais que estavam prestes a invadir o prédio
+                após um alarme de segurança ter sido acionado inadvertidamente.</p>
+            <button class="btn-proximo" data-proximo="0">Retorne para o ínicio</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Descendo as escadas, você entra em uma série de velhos túneis subterrâneos.<br>
+                O ar é úmido e frio, mas ao longe, ela ouve o eco de vozes.<br>
+                Movido pela curiosidade e um pouco de medo, você decide seguir o som e se depara com uma porta à sua
+                frente.</p>
+            <button class="btn-proximo" data-proximo="20">...</button>
+        </div>
+
+        <div class="passo" id="passo-20">
+            <p>Abrir a porta?</p>
+            <button class="btn-proximo" data-proximo="21">Sim</button>
+            <button class="btn-proximo" data-proximo="22">Não</button>
+        </div>
+
+        <div class="passo" id="passo-21">
+            <p>Seguindo as vozes, você descobre uma reunião secreta de professores que estão planejando um protesto
+                contra cortes de financiamento.<br>
+                Ela é convidada a juntar-se à causa, oferecendo uma nova perspectiva sobre seus professores e a
+                administração da universidade.</p>
+            <button class="btn-proximo" data-proximo="23">...</button>
+        </div>
+
+        <div class="passo" id="passo-23">
+            <img src="img/cenario-passo23.png" alt="">
+
+            <h2>Final 1: Bom</h2>
+            
+            <p>Após a experiência, você adquiriu uma compreensão mais profunda dos desafios da educação superior e da
+                importância da ação coletiva e da resiliência.<br>
+                Essa vivência despertou em você uma paixão por justiça e liderança. Sua jornada na biblioteca foi uma
+                busca por liberdade e autodescoberta, mostrando que pequenas ações podem gerar mudanças significativas
+                mesmo em tempos difíceis.<br>
+                Agora, você continua sua vida acadêmica com determinação e coragem, inspirando outros a lutar por um
+                futuro melhor e a superar obstáculos juntos.</p>
+            <button class="btn-proximo" data-proximo="0">Retorne para o ínicio</button>
+        </div>
+
+        <div class="passo" id="passo-22">
+            <p>Procurar outra saída?</p>
+            <button class="btn-proximo" data-proximo="7">Sim</button>
+            <button class="btn-proximo" data-proximo="24">Não</button>
+        </div>
+
+        <div class="passo" id="passo-24">
+            <p>...</p>
+            <button class="btn-proximo" data-proximo="9">Você desiste com medo</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
